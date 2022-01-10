@@ -1,0 +1,235 @@
+@charset "UTF-8";
+@font-face {
+    font-family:'Bebas Neue';
+    src: url(BebasNeue-Regular.otf) format('opentype');
+}
+:root{
+    --titulo:'Dancing Script', cursive;
+    --texto:'Bebas Neue';
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+header{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    flex-wrap: wrap;
+   
+    
+}
+header h1{
+    color:white;
+    font-family: var(--texto);
+    padding: 10px;
+    font-weight: normal;
+    
+}
+header a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 2px;
+    padding: 5px;
+    font-size: 0.9em;
+}
+header a:hover{
+    text-decoration: underline;
+}
+nav{
+    background-color: black;
+    padding: 5px;
+    text-align: center;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    font-family: var(--texto);
+    padding: 5px 15px;
+    font-size:1.5em;
+    font-weight: normal;
+}
+nav a:hover{
+    background-color: rgb(44, 43, 43);
+}
+/*PAGINA HOME*/
+section.apresentaçao{
+    min-height: 400px;
+    background-image: url(imagens/apresentaçaopricipal.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+section.informaçoes{
+    max-width: 600px;
+    height: 300px;
+    display: block;
+    margin: 40px auto;
+    padding: 10px;
+    background-position: right center;
+    background-size: 50% 100% ;
+    background-repeat: no-repeat;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.527);
+    
+}
+.informaçoes p{
+    font-family: var(--texto);
+    margin: 10px;
+    max-width: 40%;
+    font-size: 1.2em;
+}
+.informaçoes h2{
+    font-family: var(--texto);
+    margin: 10px;
+    max-width: 40%;
+}
+.informaçoes#espaço{
+    background-image: url(imagens/espaço.png);
+}
+.informaçoes#profissionais{
+    background-image: url(imagens/apresentação01.png);
+}
+.informaçoes#pratos{
+    background-image: url(imagens/apresentação03.png);
+}
+
+section.titulo{
+    text-align: center;
+    font-family: var(--texto);
+    padding: 50px;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.titulo#lanchestitulo{
+    background-image: url(imagens/lanchestitulo.png);
+}
+.titulo h1{
+    background-color: white;
+    padding: 20px 50px;
+    font-size: 2em;
+    display: inline-block;
+}
+section.produto{
+    max-width: 600px;
+    height: 250px;
+    display: block;
+    margin: 40px auto;
+    padding: 10px;
+    background-position: right center;
+    background-size: 50% 100% ;
+    background-repeat: no-repeat;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.527);
+}
+.titulo#pratostitulo{
+    background-image: url(imagens/pratosapresentaçao.jpg);
+}
+.titulo#docetitulo{
+    background-image: url(imagens/doceapresentaçao.jpg);
+}
+.produto p{
+    font-family: var(--texto);
+    margin: 10px;
+    max-width: 40%;
+    font-size: 1.2em;
+}
+.produto h2{
+    font-family: var(--texto);
+    margin: 10px;
+    max-width: 40%;
+}
+.produto#lanche01{
+    background-image: url(imagens/lanche01.png);
+}
+.produto#lanche02{
+    background-image: url(imagens/lanche02.png);
+}
+.produto#lanche03{
+    background-image: url(imagens/lanche03.png);
+}
+.produto#lanche04{
+    background-image: url(imagens/lanche04.png);
+}
+.produto#lanche05{
+    background-image: url(imagens/lanche05.png);
+}
+.produto#lanche06{
+    background-image: url(imagens/lanche06.png);
+}
+.produto#lanche07{
+    background-image: url(imagens/lanche07.png);
+}
+.produto#prato01{
+    background-image: url(imagens/prato01.jpg);
+}
+.produto#prato02{
+    background-image: url(imagens/prato02.jpg);
+}
+.produto#prato03{
+    background-image: url(imagens/prato03.jpg);
+}
+.produto#prato04{
+    background-image: url(imagens/prato04.jpg);
+}
+.produto#prato05{
+    background-image: url(imagens/prato05.jpg);
+}
+.produto#prato06{
+    background-image: url(imagens/prato06.jpg);
+}
+.produto#prato07{
+    background-image: url(imagens/prato07.jpg);
+}
+
+.produto#doce01{
+    background-image: url(imagens/doce01.jpg);
+}
+.produto#doce02{
+    background-image: url(imagens/doce02.jpg);
+}
+.produto#doce03{
+     background-image: url(imagens/doce03.jpg);
+}
+.produto#doce04{
+     background-image: url(imagens/doce04.jpg);
+}
+.produto#doce05{
+     background-image: url(imagens/doce05.jpg);
+}
+.produto#doce06{
+     background-image: url(imagens/doce06.jpg);
+}
+.produto#doce07{
+     background-image: url(imagens/doce07.jpg);
+}
+footer{
+    background-color: rgb(19, 19, 19);
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+footer ul,li{
+    list-style: none;
+    display: flex;
+    padding: 5px;
+    margin: 2px;
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    margin-left: 2px;
+    padding: 5px;
+    font-size: 0.9em;
+    display: block;
+    margin: a;
+}
+footer a:hover{
+    text-decoration: underline;
+}
