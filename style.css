@@ -55,7 +55,7 @@ nav a:hover{
 /*PAGINA HOME*/
 section.apresentaçao{
     height: 400px;
-    background-image: url(imagens/apresentaçaopricipal.png);
+    background-image: url(imagens/apresentaçao00.jpg);
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -98,14 +98,12 @@ section.titulo{
     text-align: center;
     font-family: var(--texto);
     padding: 50px;
-    background-position: bottom center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
-.titulo#lanchestitulo{
-    background-image: url(imagens/lanchestitulo.png);
-}
+
 .titulo h1{
     background-color: white;
     padding: 20px 50px;
@@ -126,8 +124,11 @@ section.produto{
 .titulo#pratostitulo{
     background-image: url(imagens/pratosapresentaçao.jpg);
 }
+.titulo#lanchestitulo{
+    background-image: url(imagens/lanchestitulo.jpg);
+}
 .titulo#docetitulo{
-    background-image: url(imagens/doceapresentaçao.jpg);
+    background-image: url(imagens/docestitulo.jpg);
 }
 .produto p{
     font-family: var(--texto);
