@@ -141,11 +141,34 @@ section.produto{
     margin: 10px;
     max-width: 40%;
 }
+.test{
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+.test p,h2{
+    font-family: var(--texto);
+    margin: 10px;
+    max-width: 40%;
+}
+.div1{
+    padding: 10px;
+    max-width: 500px;
+    height: 250px;
+    display: block;
+    margin: 40px auto;
+    background-image: url(imagens/lanche01.png);
+    background-position: right center;
+    background-size: 50% 100% ;
+    background-repeat: no-repeat;
+}
+
 .produto#lanche01{
     background-image: url(imagens/lanche01.png);
 }
 .produto#lanche02{
-    background-image: url(imagens/lanche02.png);
+    background-image: url(imagens/lanche01.png);
 }
 .produto#lanche03{
     background-image: url(imagens/lanche03.png);
