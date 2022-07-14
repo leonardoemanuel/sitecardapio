@@ -86,7 +86,7 @@ section.informaçoes{
     margin: 10px;
     max-width: 40%;
     max-height: 90%;
-    font-size: 1.2em;
+    font-size: 100%;
 }
 .informaçoes h2{
     font-family: var(--texto);
@@ -164,6 +164,10 @@ div.produto div{
 }
 .produto div p{
     font-size: 1.2rem;
+    font-family: var(--texto);
+}
+.produto div p strong{
+    font-family: var(--titulo);
 }
 div.produto img{
     border-radius: 0rem 1rem 1rem 0rem;
