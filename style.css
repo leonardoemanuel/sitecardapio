@@ -10,7 +10,9 @@
 *{
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
 }
+/*------------------HEADER------------------*/
 header{
     background-color: black;
     display: flex;
@@ -18,6 +20,8 @@ header{
     justify-content: space-between;
     padding: 0px 20px;
     flex-wrap: wrap;
+    position: sticky;
+    top: 0;
    
     
 }
@@ -30,31 +34,35 @@ header h1{
 }
 header a{
     text-decoration: none;
-    color: white;
+    color: gold;
     font-weight:normal;
     font-family:var(--texto);
     padding: 5px;
 }
 
-nav{
+header nav{
     background-color: black;
     padding: 5px;
     text-align: center;
 }
-nav a{
-    color: white;
+header nav a{
     text-decoration: none;
     font-family: var(--texto);
     padding: 5px 15px;
-    font-size:1.5em;
+    font-size:1.4rem;
     font-weight: normal;
 }
-nav a:hover{
+header nav a:hover{
     background-color: rgb(44, 43, 43);
 }
+/*--------------------MAIN-----------------*/
+main{
+    width: 100%;
+}
+
 /*PAGINA HOME*/
 section.apresentaçao{
-    height: 400px;
+    height: 40rem;
     background-image: url(imagens/apresentaçao00.jpg);
     background-size: cover;
     background-position: center center;
@@ -62,14 +70,15 @@ section.apresentaçao{
 }
 section.informaçoes{
     max-width: 600px;
-    height: 300px;
+    height: 15rem;
     display: block;
-    margin: 40px auto;
+    margin: 2rem auto;
     padding: 10px;
     background-position: right center;
     background-size: 50% 100% ;
     background-repeat: no-repeat;
-    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.527);
+    background-color: rgb(198, 195, 195);
+    border-radius: 1rem;
     
 }
 .informaçoes p{
@@ -93,141 +102,84 @@ section.informaçoes{
 .informaçoes#pratos{
     background-image: url(imagens/apresentação03.png);
 }
-
-section.titulo{
-    text-align: center;
-    font-family: var(--texto);
-    padding: 50px;
-    background-position: center center;
-    background-repeat: no-repeat;
+/*---------------------------------------------*/
+/*---------TITLE-------------*/
+section.title{
+    width: 100%;
+    height: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
     background-size: cover;
-    background-attachment: fixed;
 }
-
-.titulo h1{
-    background-color: white;
-    padding: 20px 50px;
-    font-size: 2em;
-    display: inline-block;
-}
-section.produto{
-    max-width: 600px;
-    height: 250px;
-    display: block;
-    margin: 40px auto;
-    padding: 10px;
-    background-position: right center;
-    background-size: 50% 100% ;
-    background-repeat: no-repeat;
-    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.527);
-}
-.titulo#pratostitulo{
-    background-image: url(imagens/pratosapresentaçao.jpg);
-}
-.titulo#lanchestitulo{
+section#titleLanches{
     background-image: url(imagens/lanchestitulo.jpg);
 }
-.titulo#docetitulo{
+section#titleSobremesa{
     background-image: url(imagens/docestitulo.jpg);
 }
-.produto p{
-    font-family: var(--texto);
-    margin: 10px;
-    width: 40%;
-    font-size: 1.2em;
+section#titlePratos{
+    background-image: url(imagens/pratosapresentaçao.jpg);
 }
-.produto h2{
-    font-family: var(--texto);
-    margin: 10px;
-    max-width: 40%;
+section.title h1{
+    font-family: var(--titulo);
+    background-color: black;
+    color: gold;
+    border-radius: 3rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bolder;
 }
-.test{
+/*-----------VENDAS-----------*/
+section.vendas{
+    width: 100%;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    
-    
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
-.test p,h2{
+section.vendas div.produto{
+    border-radius: 1rem;
+    width: 30rem;
+    height: 15rem;
+    background-color: rgb(198, 195, 195);
+    display: flex;
+}
+div.produto div{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--titulo);
+    gap: 0.5rem;
+    padding: 1rem;
+    width: 50%;
+    height: 100%;
+}
+.produto div h2{
     font-family: var(--texto);
-    margin: 10px;
-    max-width: 40%;
+    font-size: 1.8rem;
+    font-weight: normal;
 }
-.div1{
-    padding: 10px;
-    max-width: 500px;
-    height: 250px;
-    display: block;
-    margin: 40px auto;
-    background-image: url(imagens/lanche01.png);
-    background-position: right center;
-    background-size: 50% 100% ;
-    background-repeat: no-repeat;
+.produto div p{
+    font-size: 1.2rem;
+}
+div.produto img{
+    border-radius: 0rem 1rem 1rem 0rem;
+    width: 50%;
+    height: 100%;
 }
 
-.produto#lanche01{
-    background-image: url(imagens/lanche01.png);
-}
-.produto#lanche02{
-    background-image: url(imagens/lanche01.png);
-}
-.produto#lanche03{
-    background-image: url(imagens/lanche03.png);
-}
-.produto#lanche04{
-    background-image: url(imagens/lanche04.png);
-}
-.produto#lanche05{
-    background-image: url(imagens/lanche05.png);
-}
-.produto#lanche06{
-    background-image: url(imagens/lanche06.png);
-}
-.produto#lanche07{
-    background-image: url(imagens/lanche07.png);
-}
-.produto#prato01{
-    background-image: url(imagens/prato01.jpg);
-}
-.produto#prato02{
-    background-image: url(imagens/prato02.jpg);
-}
-.produto#prato03{
-    background-image: url(imagens/prato03.jpg);
-}
-.produto#prato04{
-    background-image: url(imagens/prato04.jpg);
-}
-.produto#prato05{
-    background-image: url(imagens/prato05.jpg);
-}
-.produto#prato06{
-    background-image: url(imagens/prato06.jpg);
-}
-.produto#prato07{
-    background-image: url(imagens/prato07.jpg);
-}
 
-.produto#doce01{
-    background-image: url(imagens/doce01.jpg);
-}
-.produto#doce02{
-    background-image: url(imagens/doce02.jpg);
-}
-.produto#doce03{
-     background-image: url(imagens/doce03.jpg);
-}
-.produto#doce04{
-     background-image: url(imagens/doce04.jpg);
-}
-.produto#doce05{
-     background-image: url(imagens/doce05.jpg);
-}
-.produto#doce06{
-     background-image: url(imagens/doce06.jpg);
-}
-.produto#doce07{
-     background-image: url(imagens/doce07.jpg);
-}
+
+
+
+
+
+
+
+/*---------------FOOTER---------------*/
 footer{
     background-color: rgb(19, 19, 19);
     text-align: center;
