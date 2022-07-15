@@ -61,14 +61,14 @@ main{
 }
 
 /*PAGINA HOME*/
-section.apresentaçao{
+article.apresentaçao{
     height: 40rem;
     background-image: url(imagens/apresentaçao00.jpg);
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
 }
-section.informaçoes{
+article.informaçoes{
     max-width: 600px;
     height: 15rem;
     display: block;
